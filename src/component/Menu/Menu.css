@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Permanent+Marker&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7; /* Light grey background */
+}
+
+.menu-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Concert One', sans-serif;
+  color: #333;
+  background-color: #f0f8ff; /* Light background for a clean, fresh feel */
+  padding: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #2e8b57; /* Dark green color */
+  margin-bottom: 20px;
+}
+
+.select-mode-text {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.mode-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #28a745; /* Green button color */
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mode-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.mode-btn h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.row.justify-content-center.align-items-center.g-4 {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .mode-btn {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .welcome-text {
+    font-size: 2.5rem;
+  }
+
+  .select-mode-text {
+    font-size: 1.5rem;
+  }
+}
+
+.btn-secondary {
+  background-color: #7f8c8d;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #95a5a6;
+  transform: scale(1.05);
+}

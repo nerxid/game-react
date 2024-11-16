@@ -1,17 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { UserProvider } from './UserContext'; 
+import Normal from './component/Normal/Normal';
+import Easy from './component/Easy/Easy';
+import Hard from './component/Hard/Hard';
+import HighScoresTable  from './component/HighScoresTable';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+import Menu from './component/Menu/Menu';
+import App from './component/App';
+import Signup from './component/Signup';
+import reportWebVitals from './reportWebVitals';
+import Home from './component/Home/Home';
+import Admin from './component/Admin/Admin';
+
+const router = createBrowserRouter([
+  { path: "/", element: <App /> },
+  { path: "/Signup", element: <Signup /> },
+  { path: "/Menu", element: <Menu /> },
+  { path: "/Easy", element: <Easy /> },
+  { path: "/Hard", element: <Hard /> },
+  { path: "/HighScoresTable", element: <HighScoresTable /> },
+  { path: "/Home", element: <Home /> },
+  { path: "/Admin", element: <Admin /> },
+
+  { path: "/Normal", element: <Normal /> },
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <UserProvider>
+    <RouterProvider router={router} />
+  </UserProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

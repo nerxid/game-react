@@ -1,0 +1,57 @@
+.scores-tab {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.scores-tab h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.score-filters {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.score-filters label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.score-filters select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.score-table th, .score-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.score-table th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+
+.score-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.score-table tbody tr:hover {
+    background-color: #e0f7e0;
+}

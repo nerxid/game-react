@@ -1,0 +1,48 @@
+/* Adjusting general layout and background */
+.container {
+  background-color: #f5f5f5;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.question {
+  margin: 30px 0;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 15px 40px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #3498db;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
