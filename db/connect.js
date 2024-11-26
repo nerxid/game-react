@@ -229,6 +229,18 @@ app.post('/api/signup', (req, res) => {
     });
 });
 
+app.post('/api/checkemail', (req, res) => {
+    const { username, email, password } = req.body;
+    const sql = 'INSERT INTO users (username, email, password) VALUES (?, ?, ?)';
+    db.query(sql, [username, email, password], (err, result) => {
+      if (err) {
+        console.error('Error registering user:', err);
+        return res.status(500).send(err);
+      }
+      res.status(200).send('User registered successfully');
+    });
+});
+
 
 // เพิ่มใน server.js หรือไฟล์เซิร์ฟเวอร์ของคุณ
 app.post('/api/login', (req, res) => {

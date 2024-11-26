@@ -46,7 +46,7 @@ const Home = () => {
         {/* View High Scores Link */}
         <div className="mt-4">
           <Link to="/HighScoresTable" className="btn btn-outline-primary btn-lg" style={{ fontSize: '1.2rem', padding: '10px 25px', textTransform: 'uppercase' }}>
-            <i className="bi bi-trophy-fill"></i> View My Scores
+            <i className="bi bi-trophy-fill"></i> View Top Score
           </Link>
         </div>
       </div>

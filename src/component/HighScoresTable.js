@@ -59,7 +59,7 @@ function HighScoresTable() {
 
       {/* ปุ่มกลับไปที่หน้า Login */}
       <div className="d-flex justify-content-center">
-        <Link to="/" className="btn btn-secondary btn-lg">Back to Login</Link>
+        <Link to="/Home" className="btn btn-secondary btn-lg">Back</Link>
       </div>
     </div>
   );

@@ -76,7 +76,7 @@ function App() {
 
   <div className="mt-3">
     <Link className="btn btn-outline-info mt-3" to="/HighScoresTable">
-      <i className="bi bi-trophy-fill"></i> High Scores
+      <i className="bi bi-trophy-fill"></i> Top Scores
     </Link>
   </div>
 
